@@ -32,8 +32,8 @@ const Table = ({ headTitles, data, type }) => {
 						const isLastItem = key === data.length - 1;
 						const isEven = key % 2 === 0;
 						return (
-							<TBody isLastItem={isLastItem} isEven={isEven}>
-								<tr key={key}>
+							<TBody isLastItem={isLastItem} isEven={isEven} key={key}>
+								<tr>
 									<td>
 										<Link to={`/${type}/${item.id}`} state={item}>
 											{type === 'number'
